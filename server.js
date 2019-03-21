@@ -7,6 +7,7 @@ var server = http.createServer(function(req, resp){
 		if(error){
 			resp.writeHead(500, {'Content-Type': 'text/plain'});
 			resp.end('Error');
+			
 		}
 		else{
 			resp.writeHead(200, {'Content-Type': 'text/html'});
